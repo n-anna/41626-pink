@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Nazik Annayeva](https://up.htmlacademy.ru/adaptive/13/user/41626).
-* Наставник: `Александр Горбачев`.
+* Наставник: [Александр Горбачев](https://htmlacademy.ru/profile/hrbchv).
 
 ---
 
