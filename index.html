@@ -28,9 +28,29 @@
               <!-- Add pseudo elements -->
               <span class="btn-menu__items"></span>
             </button>
+            <!-- Accessibility: used aria-expanded-->
+            <div class="main-nav__dropdown" aria-expanded="false">
+              <div class="main-nav__dropdown-inner">
+                <ul class="main-nav__list">
+                  <!-- Accessibility: used aria-current-->
+                  <li class="main-nav__item ">
+                    <a class="main-nav__link subhead-mid" href="#" aria-current="page">Главная</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link subhead-mid" href="photo.html">Фотографии</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link subhead-mid" href="form.html">Конкурс</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link subhead-mid" href="https://htmlacademy.ru/intensive/adaptive" rel="noopener" rel="nofollow">HTML Academy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </nav>
-
       </div>
+
     </div>
   </header>
 </body>
