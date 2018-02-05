@@ -23,7 +23,16 @@
               <img class="logo__img" src="http://placehold.it/75x22" width="75" height="22" alt="Pink logo">
             </a>
           </div>
+            <!-- Accessibility: used aria-label-->
+          <nav class="main-nav page-header__nav" aria-label="global-menu">
+            <!-- Accessibility: used aria-expanded and aria-haspopup-->
+            <button class="btn-menu main-nav__trigger" type="button" aria-expanded="false" aria-haspopup="true" aria-label="global-menu-button">
+              <!-- Accessibility: provided alternative text -->
+              <span class="sr-only visually-hidden hidden-text">Hamburger menu button</span>
+              <span class="btn-menu__items"></span>
+            </button>
 
+          </nav>
         </div>
       </div>
     </header>
