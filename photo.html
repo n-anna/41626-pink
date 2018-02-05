@@ -296,9 +296,60 @@
             <p class="upload-ph__message-exclam body-text">Затмите их!</p>
             <p class="upload-ph__message-text body-text">Выкладывайте все, что накопилось в телефоне!</p>
           </div>
-
+          <div class="photo-editor upload-ph__edit-holder">
+            <!-- Placeholder img as a bg -->
+            <div class="photo-editor__container">
+              <canvas class="photo-editor__canvas" width="280" height="374" aria-label="photo-edit-canvas"></canvas>
+            </div>
+            <!-- Photo edit controls -->
+            <div class="photo-editor__controls" aria-label="photo-edit-controls">
+              <ul class="photo-editor__controls-list">
+                <li class="photo-editor__control-item">
+                  <div class="photo-editor__control-holder">
+                    <div class="photo-editor__control" onclick="" onmouseover="">
+                      <!-- svg control-icon -->
+                      <img class="photo-editor__control-icon" src="http://placehold.it/48x48" width="48" height="48" alt="Crop control">
+                    </div>
+                  </div>
+                </li>
+                <li class="photo-editor__control-item">
+                  <div class="photo-editor__control-holder">
+                    <div class="photo-editor__control" onclick="" onmouseover="">
+                      <!-- svg control-icon -->
+                      <img class="photo-editor__control-icon" src="http://placehold.it/48x48" width="48" height="48" alt="Fill control">
+                    </div>
+                  </div>
+                </li>
+                <li class="photo-editor__control-item">
+                  <div class="photo-editor__control-holder">
+                    <div class="photo-editor__control" onclick="" onmouseover="">
+                      <!-- svg control-icon -->
+                      <img class="photo-editor__control-icon" src="http://placehold.it/48x48" width="48" height="48" alt="Contrast control">
+                    </div>
+                  </div>
+                </li>
+                <li class="photo-editor__control-item">
+                  <div class="photo-editor__control-holder">
+                    <div class="photo-editor__control">
+                      <!-- CSS Range slider-control -->
+                      <input class="photo-editor__control-range" type="range" min="0" max="100" value="90" title="Range sider">
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="photo-editor__btns">
+              <div class="photo-editor__btn-submit">
+                <button class="btn btn--submit-share subhead-mid" type="submit">Запостить</button>
+              </div>
+              <div class="photo-editor__btn-abort">
+                <button class="btn btn--abort-share subhead-mid" type="reset">Отмена</button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+
   </body>
 </html>
