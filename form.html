@@ -70,7 +70,37 @@
           <div class="contest-message contestform__message">
             <p class="contest-message__text body-text">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!</p>
           </div>
+          <!-- Contest Form Block -->
+          <div class="contestform__holder">
+            <form class="form contestform__fillout" action="https://echo.htmlacademy.ru" method="post">
+              <!-- Personal Info Block 1 -->
+              <fieldset class="form__persinfo-holder">
+                <!-- Accessibility: hidden legend -->
+                <legend class="form__persinfo-legend sr-only visually-hidden">Заполните личные данные</legend>
+                <div class="form__group">
+                  <!-- Required field -->
+                  <label class="form__group-field">
+                    <span class="form__group-label body-text">Фамилия:</span>
+                    <input class="form__group-formcontrol form-label" type="text" name="surname" required placeholder="Укажите фамилию &#10033;" value="">
+                  </label>
+                </div>
+                <div class="form__group">
+                  <!-- Required field -->
+                  <label class="form__group-field">
+                    <span class="form__group-label body-text">Имя:</span>
+                    <input class="form__group-formcontrol form-label" type="text" name="name" required placeholder="Введите ваше имя &#10033;" value="">
+                  </label>
+                </div>
+                <div class="form__group">
+                  <label class="form__group-field">
+                    <span class="form__group-label body-text">Отчество:</span>
+                    <input class="form__group-formcontrol form-label" type="text" name="midname" placeholder="Ну и отчество тоже" value="">
+                  </label>
+                </div>
+              </fieldset>
 
+            </form>
+          </div>
         </div>
       </section>
     </main>
