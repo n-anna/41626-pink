@@ -23,8 +23,38 @@
               <img class="logo__img" src="http://placehold.it/75x22" width="75" height="22" alt="Pink logo">
             </a>
           </div>
-
+          <!-- Accessibility: used aria-label-->
+          <nav class="main-nav page-header__nav" aria-label="global-menu">
+            <!-- Accessibility: used aria-expanded and aria-haspopup-->
+            <button class="btn-menu main-nav__trigger" type="button" aria-expanded="false" aria-haspopup="true" aria-label="global-menu-button">
+              <!-- Accessibility: provided alternative text -->
+              <span class="sr-only visually-hidden hidden-text">Hamburger menu button</span>
+              <!-- Add pseudo elements -->
+              <span class="btn-menu__items"></span>
+            </button>
+            <!-- Accessibility: used aria-expanded-->
+            <div class="main-nav__dropdown" aria-expanded="false">
+              <div class="main-nav__dropdown-inner">
+                <ul class="main-nav__list">
+                  <li class="main-nav__item">
+                    <a class="main-nav__link subhead-mid" href="index.html">Главная</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link subhead-mid" href="photo.html">Фотографии</a>
+                  </li>
+                  <!-- Accessibility: used aria-current-->
+                  <li class="main-nav__item">
+                    <a class="main-nav__link subhead-mid" href="#" aria-current="page">Конкурс</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link subhead-mid" href="https://htmlacademy.ru/intensive/adaptive" rel="noopener" rel="nofollow">HTML Academy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </div>
+
       </div>
     </header>
   </body>
