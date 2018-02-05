@@ -73,7 +73,37 @@
             <p class="feed-message__quest body-text">Видите, как не хватает ваших?</p>
           </div>
         </div>
-
+        <artice class="photo-day photofeed__photoday">
+          <!-- Accessibility: hidden heading -->
+          <h3 class="sr-only visually-hidden">Фотография дня</h3>
+          <!-- Img or bg image covering full width? -->
+          <div class="photo-day__img-holder">
+            <a class="photo-day__imgfool-link" href="#">
+              <img class="photo-day__img-prev" src="http://placehold.it/320x137" alt="Photo Day">
+              <span class="photo-day__label">Панорама дня</span>
+            </a>
+          </div>
+          <div class="photo-day__inner inner user-info">
+            <header class="photo-day__header user-info__heading">
+              <h4 class="photo-day__user-name user-info__heading-name" aria-label="photoday-user">Анна</h4>
+              <time class="photo-day__share-date user-info__heading-date" datetime="">(5 минут назад)</time>
+            </header>
+            <div class="photo-day__post-desc user-info__postdesc">
+              <p class="photo-day__post-text user-info__postdesc-text body-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            </div>
+            <footer class="photo-day__footer user-info__like">
+              <a class="photo-day__like-link user-info__like-link" href="#" onclick="" tittle="Like">
+                <!-- Accessibility: provided alternative text -->
+                <span class="sr-only visually-hidden">Нажать на интерактивный элемент Like</span>
+                <svg class="photo-day__like-icon user-info__like-icon" aria-hidden="true">
+                  <use xlink:href="#">
+                </svg>
+                <span class="photo-day__like-label user-info__like-label">Нравится:</span>
+                <span class="photo-day__like-count user-info__like-count">215</span>
+              </a>
+            </footer>
+          </div>
+        </artice>
       </section>
     </main>
   </body>
