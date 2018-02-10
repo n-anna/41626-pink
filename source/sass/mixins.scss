@@ -1,0 +1,226 @@
+
+// ----------------------- BUTTONS STATES
+
+//download button
+@mixin download-btn-theme {
+  color: $secondary-color;
+  border: 3px solid $brdr-third;
+
+  //btn hover styles
+  &:hover {
+    color: $accent-color;
+    background-color: $bg-secondary;
+
+  }
+
+  //btn pressed styles
+  &:active {
+    color: rgba($accent-color, 0.3);
+    background-color: $bg-secondary;
+
+  }
+
+}
+
+
+//submit button
+@mixin submit-btn-theme {
+  color: $secondary-color;
+  background-color: $bg-accent-secondary;
+
+  //btn hover styles
+  &:hover {
+    color: $secondary-color;
+    background-color: $bg-accent-secondary-shade;
+
+  }
+
+  //btn pressed styles
+  &:active {
+    color: rgba($secondary-color, 0.3);
+    background-color: $bg-accent-secondary-shade;
+
+  }
+
+}
+
+
+//submit button disabled
+@mixin submit-disabled-btntheme {
+  color: $secondary-color;
+  background-color: $bg-third;
+
+}
+
+
+//photoshare button
+@mixin share-btn-theme {
+  color: $accent-color;
+  border: 3px solid $brdr-accent;
+
+  //btn hover states
+  &:hover {
+    color: $secondary-color;
+    background-color: $bg-accent-primary;
+
+  }
+
+  //btn pressed styles
+  &:active {
+    color: rgba($secondary-color, 0.3);
+    background-color: $bg-accent-primary;
+
+  }
+
+}
+
+
+//photoshare abort styles
+@mixin share-abort-btntheme {
+  color: rgba($primary-color, 0.1);
+  border: 3px solid rgba($brdr-secondary, 0.1);
+
+  //btn hover styles
+  &:hover {
+     color: rgba($primary-color, 0.3);
+     border: 3px solid rgba($brdr-secondary, 0.3);
+
+  }
+
+  //btn pressed styles
+  &:active {
+    color: rgba($primary-color, 0.3);
+    background-color: #b5b9be;
+
+  }
+
+}
+
+
+
+// ----------------------- FORM ELEMENTS STATES
+
+//inputs, checkboxes & radio buttons
+@mixin input-theme {
+  border: 2px solid $brdr-primary;
+
+  //hover state
+  &:hover {
+    border: 2px solid $brdr-secondary;
+
+  }
+
+  //pressed state
+  &:active {
+    border: 2px solid $brdr-accent;
+
+  }
+
+}
+
+
+
+// ------------------------ MAIN NAV STATES
+
+//dropdown nav
+@mixin nav-dropdown-theme {
+  color: $secondary-color;
+
+  &:hover {
+    color: $accent-color;
+
+  }
+
+  &:active {
+    color: rgba($accent-color, 0.3);
+
+  }
+
+}
+
+
+// horizontal nav
+@mixin nav-theme {
+  color: $secondary-color;
+
+  &:hover {
+    color: $accent-color;
+
+  }
+
+  &:active {
+    color: rgba($secondary-color, 0.3);
+
+  }
+
+}
+
+
+//hamburger & close button theme
+@mixin btn-dropdown-theme {
+  background-color: $bg-secondary;
+
+  &:hover {
+    background-color: $bg-accent-primary;
+
+  }
+
+  &:active {
+    background-color: rgba($bg-accent-primary, 0.3);
+
+  }
+
+}
+
+
+
+// ------------------- EMAIL STATES
+
+@mixin email-link-theme {
+  color: $accent-color;
+
+  &:hover {
+    color: $primary-color;
+    text-decoration: underline;
+
+  }
+
+  &:active {
+    color: rgba($primary-color, 0.3);
+
+  }
+
+
+}
+
+
+
+//SECTION ANGLED EDGES BG
+
+//angled shape bg
+@mixin angled-section-bg {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 4vw),
+    0 100%
+  );
+  background-color: $bg-secondary;
+
+}
+
+
+
+//arrow shape bg
+@mixin arrow-section-bg {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 3vw),
+    50 100%,
+    0 calc(100% - 3vw)
+  );
+  background-color: $bg-secondary;
+
+}
+
