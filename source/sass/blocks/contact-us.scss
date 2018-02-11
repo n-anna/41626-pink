@@ -1,0 +1,62 @@
+.contact-us {
+  padding-top: 45px;
+  padding-bottom: 80px;
+  background-color: $bg-secondary;
+
+}
+
+
+.contact-us--section-edge {
+  @include arrow-bg;
+
+}
+
+
+.contact-us__inner {
+  padding-right: 20px;
+  padding-left: 20px;
+
+}
+
+.contact-us__heading-quest {
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-align: center;
+
+}
+
+
+.contact-us__heading-exclam {
+  margin-top: 0;
+  margin-bottom: 40px;
+  text-align: center;
+
+}
+
+.contact-us__info-holder {
+  text-align: center;
+
+}
+
+
+.contact-us__heading {
+  margin-top: 0px;
+  margin-bottom: 3px;
+
+}
+
+
+.contact-us__info {
+  display: inline-block;
+  margin-bottom: 25px;
+
+}
+
+
+.contact-us__info-address {
+  display: inline-block;
+  margin-bottom: 25px;
+
+}
+
+
