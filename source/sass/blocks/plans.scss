@@ -1,0 +1,13 @@
+.plans--section-edge {
+  background-color: $bg-secondary-shade;
+
+  @include angled-reverse-bg;
+
+}
+
+
+.plans__holder {
+  padding-top: 90px;
+  padding-bottom: 45px;
+
+}
