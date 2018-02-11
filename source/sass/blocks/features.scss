@@ -1,0 +1,21 @@
+.features {
+  position: relative;
+  z-index: -1;
+  background-color: $bg-secondary-shade;
+
+}
+
+
+.features__heading--section-edge {
+  @include angled-bg;
+
+}
+
+
+.features__img {
+  position: absolute;
+  left: calc(50% - 78.5px);
+  bottom: -40px;
+
+}
+
