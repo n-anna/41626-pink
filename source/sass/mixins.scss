@@ -198,29 +198,37 @@
 //SECTION ANGLED EDGES BG
 
 //angled shape bg
-@mixin angled-section-bg {
+@mixin angled-bg {
   clip-path: polygon(
     0 0,
     100% 0,
-    100% calc(100% - 4vw),
+    100% calc(100% - 6vw),
     0 100%
   );
-  background-color: $bg-secondary;
 
 }
 
 
+//angled reverse shape bg
+@mixin angled-reverse-bg {
+  clip-path: polygon(
+   0 6vw,
+   100% 0,
+   100% 100%,
+   0 100%
+  );
 
-//arrow shape bg
-@mixin arrow-section-bg {
+}
+
+
+// arrow shape bg
+@mixin arrow-bg {
   clip-path: polygon(
     0 0,
     100% 0,
-    100% calc(100% - 3vw),
-    50 100%,
-    0 calc(100% - 3vw)
+    100% calc(100% - 15vw),
+    50% 100%,
+    0 calc(100% - 15vw)
   );
-  background-color: $bg-secondary;
 
 }
-
