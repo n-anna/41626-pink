@@ -1,6 +1,24 @@
-.apps__list {
+.apps__list  {
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
   list-style: none;
+
+}
+
+
+.apps__item,
+.apps__item-link {
+  display: inline-block;
+
+}
+
+
+.apps-desc__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 300;
+  color: $secondary-color;
+  text-align: center;
 
 }
