@@ -12,8 +12,8 @@
     <header class="page-header">
       <!-- Accessibility hidden heading -->
       <h1 class="sr-only visually-hidden">PINK — приложение от HTML Academy</h1>
-      <div class="page-header__inner inner">
-        <div class="page-header__top">
+      <div class="page-header__top">
+        <div class="page-header__top-inner">
           <div class="logo page-header__logo">
             <a class="logo__link" href="#">
               <!-- svg logo -->
@@ -51,11 +51,13 @@
             </div>
           </nav>
         </div>
-        <div class="hero page-header__btm">
-          <div class="hero__img-holder page-header__btm-img">
-            <img class="hero__img-action" src="http://placehold.it/320x462" alt="iPhone in hand, app showcase">
-          </div>
-          <div class="hero__action page-header__btm-action">
+      </div>
+      <div class="hero page-header__btm">
+        <div class="hero__img-holder page-header__btm-img">
+          <img class="hero__img-action" src="img/iphone-hand-mobile@1x.png" alt="iPhone in hand, app showcase">
+        </div>
+        <div class="hero__action page-header__btm-action">
+          <div class="hero__action-inner">
             <div class="btn btn--download hero__action-btn" aria-label="download-app-button">
               <a class="btn__link subheading" href="https://www.apple.com/lae/itunes/working-itunes/market/" rel="noopener" rel="nofollow">Скачать приложение</a>
             </div>
@@ -89,14 +91,16 @@
     <main class="homepage-main">
       <!-- Section 1 -->
       <section class="features">
-        <div class="features__inner inner">
-          <div class="appfeat-heading features__heading features__heading--section-edge">
+        <div class="appfeat-heading features__heading features__heading--section-edge">
+          <div class="appfeat-heading__inner">
             <div class="appfeat-heading__holder">
               <h2 class="appfeat-heading__quest heading">Устали от серости мегаполиса?</h2>
               <h2 class="appfeat-heading__exclam heading">Нам есть, что вам предложить!</h2>
             </div>
           </div>
-          <div class="appfeat-desc features__desc">
+        </div>
+        <div class="appfeat-desc features__desc">
+          <div class="appfeat-desc__inner">
             <ul class="appfeat-desc__list">
               <li class="appfeat-desc__item">
                 <h3 class="appfeat-desc__heading subheading">Поднимает настроение</h3>
@@ -112,14 +116,14 @@
               </li>
             </ul>
           </div>
-          <div class="appfeat-img features__img">
-            <img class="appfeat-img__action" src="http://placehold.it/157x330" alt="iPhone screen, app showcase" >
-          </div>
+        </div>
+        <div class="appfeat-img features__img">
+          <img class="appfeat-img__action" src="img/iphone-screen-mobile@1x.png" alt="iPhone screen, app showcase" >
         </div>
       </section>
       <!-- Section 2 App-Review -->
-      <section class="app-review app-review--section-edge">
-        <div class="app-review__inner inner">
+      <section class="app-review">
+        <div class="app-review__inner">
           <!-- Accessibility: hidden heading -->
           <h2 class="sr-only visually-hidden">Отзывы пользователей приложения</h2>
           <div class="review app-review__users">
@@ -155,8 +159,8 @@
         </div>
       </section>
       <!-- Section 3 Plans-->
-      <section class="plans">
-        <div class="plans__inner inner">
+      <section class="plans plans--section-edge">
+        <div class="plans__inner">
           <!-- Accessibility: hidden heading -->
           <h2 class="sr-only visually-hidden">Планы и цены приложения</h2>
           <div class="plans__holder">
@@ -226,8 +230,8 @@
       </section>
     </main>
     <footer class="homepage-footer">
-      <div class="homepage-footer__inner inner">
-        <div class="contact-us contact-us--section-edge homepage-footer__contact-us">
+      <div class="contact-us contact-us--section-edge homepage-footer__contact-us">
+        <div class="contact-us__inner">
           <div class="contact-us__heading-holder">
             <h2 class="contact-us__heading-quest heading">Остались вопросы?</h2>
             <h2 class="contact-us__heading-exclam heading">Свяжитесь с нами!</h2>
@@ -250,12 +254,13 @@
               <span class="contact-us__info-address heading">ул. Большая Конюшенная, 19/8</span>
             </div>
           </div>
-
-        </div>
-        <div class="map-container yandex-map homepage-footer__map-holder" id="map">
-          <!-- yandex map -->
         </div>
       </div>
+      <div class="map-container yandex-map homepage-footer__map-holder" id="map">
+        <img class="yandex-map__img" src="img/bg-map-mobile@1x.png" alt="yandex-map">
+        <!-- yandex map -->
+      </div>
+
     </footer>
   </body>
 </html>
