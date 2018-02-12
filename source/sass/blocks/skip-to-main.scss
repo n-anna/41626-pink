@@ -1,0 +1,27 @@
+.skip-to-main__link {
+  position: absolute;
+  top: 8px;
+  left: 50px;
+  z-index: 1;
+  display: block;
+  height: 1px;
+  width: 1px;
+  padding: 12px;
+  line-height: 1;
+  white-space: nowrap;
+  color: $primary-color;
+  overflow: hidden;
+  clip-path: inset(50%);
+  background-color: rgba($bg-secondary, 0.6);
+  border: 1px solid $bg-secondary-shade;
+
+}
+
+.skip-to-main__link:focus {
+  position: absolute;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  clip-path: none;
+
+}
