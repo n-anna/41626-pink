@@ -67,19 +67,25 @@
     <!-- Accessibility skip-to-main-->
     <main class="main-content" id="skip-to-main" tabindex="-1">
       <section class="contestform">
-        <div class="contestform__inner">
-          <!-- Accessibility: hidden heading -->
-          <h2 class="sr-only visually-hidden">Заполните форму</h1>
-          <div class="contest-message contestform__message">
+        <!-- Accessibility: hidden heading -->
+        <h2 class="sr-only visually-hidden">Заполните форму</h1>
+        <div class="contest-message contestform__message">
+          <div class="contest-message__inner">
             <p class="contest-message__text body-text">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!</p>
           </div>
-          <!-- Contest Form Block -->
-          <div class="contestform__holder">
-            <form class="form contestform__fillout" action="https://echo.htmlacademy.ru" method="post">
-              <!-- Personal Info Block 1 -->
-              <fieldset class="form__persinfo-holder">
-                <!-- Accessibility: hidden legend -->
-                <legend class="form__persinfo-legend sr-only visually-hidden">Заполните личные данные</legend>
+        </div>
+        <!-- Contest Form Block -->
+        <div class="contestform__holder">
+          <form class="form contestform__fillout" action="https://echo.htmlacademy.ru" method="post">
+            <!-- Personal Info Block 1 -->
+            <fieldset class="form__persinfo-holder">
+              <div class="form__persinfo-inner">
+                <!-- Accessibility: hidden heading -->
+                <h3 class="sr-only visually-hidden">Заполните личные данные</h3>
+                <!-- Accessibility: legend is invisible to sr, because heading has an accessible alternative -->
+                <div class="form__persinfo-message">
+                  <legend class="form__persinfo-legend body-text" aria-hidden="true">Заполните личные данные</legend>
+                </div>
                 <div class="form__group">
                   <!-- Required field -->
                   <label class="form__group-field">
@@ -100,14 +106,16 @@
                     <input class="form__group-formcontrol form-label" type="text" name="midname" placeholder="Ну и отчество тоже" value="">
                   </label>
                 </div>
-              </fieldset>
-              <!-- Accomplishements Info Block 2 -->
-              <fieldset class="form__accomp-holder">
-                <!-- Accessibility: hidden legend -->
-                <legend class="form__accomp-legend sr-only visually-hidden">Отметьте ваши безбашенные достижения в путешествии</legend>
-                <!-- Accessibility: heading is invisible to sr, because legend has an accessible alternative -->
+              </div>
+            </fieldset>
+            <!-- Accomplishements Info Block 2 -->
+            <fieldset class="form__accomp-holder fieldset">
+              <div class="form__accomp-inner">
+                <!-- Accessibility: hidden heading -->
+                <h3 class="sr-only visually-hidden">Отметьте ваши безбашенные достижения в путешествии</h3>
+                <!-- Accessibility: legend is invisible to sr, because heading has an accessible alternative -->
                 <div class="form__accomp-message">
-                  <h3 class="form__accomp-heading body-text" aria-hidden="true">Ваши безбашенные достижения в путешествии</h3>
+                  <legend class="form__accomp-legend body-text" aria-hidden="true">Ваши безбашенные достижения в путешествии</legend>
                 </div>
                 <div class="form__check">
                   <label class="form__check-checkbox">
@@ -157,11 +165,17 @@
                     <span class="form__check-label form-label">Разгромил отель</span>
                   </label>
                 </div>
-              </fieldset>
-              <!-- Phone & email info Block 3 -->
-              <fieldset class="form__contact-holder">
-                <!-- Accessibility: hidden legend -->
-                <legend class="form__contact-legend sr-only visually-hidden">Заполните контактную информацию</legend>
+              </div>
+            </fieldset>
+            <!-- Phone & email info Block 3 -->
+            <fieldset class="form__contact-holder">
+              <div class="form__contact-inner">
+                <!-- Accessibility: hidden heading -->
+                <h3 class="sr-only visually-hidden">Заполните контактную информацию</h3>
+                <!-- Accessibility: legend is invisible to sr, because heading has an accessible alternative -->
+                <div class="form__contact-message">
+                  <legend class="form__contact-legend body-text" aria-hidden="true">Контактная информация</legend>
+                </div>
                 <div class="form__group">
                   <label class="form__group-field">
                     <span class="form__group-label body-text">Номер телефона</span>
@@ -175,14 +189,16 @@
                     <input class="form__group-formcontrol form-label" type="email" name="email" required placeholder="Введите почту &#10033;" value="">
                   </label>
                 </div>
-              </fieldset>
-              <!-- App Info Block 4 -->
-              <fieldset class="form__app-holder">
-                <!-- Accessibility: hidden legend -->
-                <legend class="form__app-legend sr-only visually-hidden">Отметьте приложение, которое вы использовали в путешествовии</legend>
-                <!-- Accessibility: heading is invisible to sr, because legend has an accessible alternative -->
+              </div>
+            </fieldset>
+            <!-- App Info Block 4 -->
+            <fieldset class="form__app-holder">
+              <div class="form__app-inner">
+                <!-- Accessibility: hidden heading -->
+                <h3 class="sr-only visually-hidden">Отметьте приложение, которое вы использовали в путешествовии</h3>
+                <!-- Accessibility: legend is invisible to sr, because heading has an accessible alternative -->
                 <div class="form__app-message">
-                  <h3 class="form__app-heading body-text" aria-hidden="true">С каким приложением путешествовали?</h3>
+                  <legend class="form__app-legend body-text" aria-hidden="true">С каким приложением путешествовали?</legend>
                 </div>
                 <div class="form__radio">
                   <label class="form__radio-radiobtn">
@@ -208,31 +224,37 @@
                     <span class="form__radio-label form-label">Windows Phone</span>
                   </label>
                 </div>
-              </fieldset>
-              <!-- Describe Info Block 5 -->
-              <fieldset class="form__descr-holder">
-                <!-- Accessibility: hidden legend -->
-                <legend class="form__descr-legend sr-only visually-hidden">Опишите свои эмоции от путешествия</legend>
-                <!-- Accessibility: heading is invisible to sr, because legend has an accessible alternative -->
+              </div>
+            </fieldset>
+            <!-- Describe Info Block 5 -->
+            <fieldset class="form__descr-holder">
+              <div class="form__descr-inner">
+                <!-- Accessibility: hidden heading -->
+                <h3 class="sr-only visually-hidden">Опишите свои эмоции от путешествия</h3>
+                <!-- Accessibility: legend is invisible to sr, because heading has an accessible alternative -->
                 <div class="form__descr-message">
-                  <h3 class="form__descr-heading body-text" aria-hidden="true">Опишите свои эмоции</h3>
+                  <legend class="form__descr-legend body-text" aria-hidden="true">Опишите свои эмоции</legend>
                 </div>
                 <div class="form__textarea">
                   <label class="form__textarea-txt">
                     <textarea class="form__textarea-formcontrol form-label" cols="20" rows="10" name="descr" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                   </label>
                 </div>
-              </fieldset>
-              <!-- Submit btn -->
-              <div class="form__btn-holder">
-                <input class="btn btn--submit form__btn-submit" type="submit" value="Отправить форму">
               </div>
-              <!-- Required fields message -->
-              <div class="form__reqfields-holder">
-                <p class="form__reqfields-message body-text">&#10033; &mdash; Обязательные поля</p>
+            </fieldset>
+            <div class="form__submit-holder">
+              <div class="form__submit-inner">
+                <!-- Submit btn -->
+                <div class="form__btn-holder">
+                  <input class="btn btn--submit form__btn-submit" type="submit" value="Отправить форму">
+                </div>
+                <!-- Required fields message -->
+                <div class="form__reqfields-holder">
+                  <p class="form__reqfields-message body-text">&#10033; &mdash; Обязательные поля</p>
+                </div>
               </div>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
       </section>
     </main>
