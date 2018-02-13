@@ -202,7 +202,7 @@
   clip-path: polygon(
     0 0,
     100% 0,
-    100% calc(100% - 6vw),
+    100% calc(100% - 10vw),
     0 100%
   );
 
@@ -212,7 +212,7 @@
 //angled reverse shape bg
 @mixin angled-reverse-bg {
   clip-path: polygon(
-   0 6vw,
+   0 10vw,
    100% 0,
    100% 100%,
    0 100%
@@ -226,9 +226,9 @@
   clip-path: polygon(
     0 0,
     100% 0,
-    100% calc(100% - 15vw),
+    100% calc(100% - 12vw),
     50% 100%,
-    0 calc(100% - 15vw)
+    0 calc(100% - 12vw)
   );
 
 }
