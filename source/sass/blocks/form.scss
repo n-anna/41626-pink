@@ -1,0 +1,211 @@
+// --- pers. info group
+.form__persinfo-holder {
+  margin: 0;
+  padding: 18px 0 15px;
+  border: none;
+
+}
+
+
+.form__persinfo-inner {
+  padding-right: 20px;
+  padding-left: 20px;
+
+}
+
+
+.form__persinfo-legend {
+  display: none;
+
+}
+
+
+.form__group-label {
+  display: block;
+  margin-bottom: 10px;
+  line-height: 1.3;
+  color: $accent-color;
+  text-transform: uppercase;
+
+}
+
+
+.form__group-formcontrol {
+  margin-bottom: 25px;
+
+}
+
+
+// --- accomplishment group
+.form__accomp-holder {
+  margin: 0;
+  padding: 20px 0 15px;
+  background-color: $bg-secondary-shade;
+  border: none;
+
+}
+
+
+.form__accomp-inner {
+  padding-right: 20px;
+  padding-left: 20px;
+
+}
+
+
+.form__accomp-message {
+  padding: 15px 30px;
+
+}
+
+
+.form__accomp-legend {
+  margin-bottom: 10px;
+  line-height: 1.3;
+  text-align: center;
+  color: $accent-color;
+  text-transform: uppercase;
+
+}
+
+
+.form__check-checkinput {
+  margin-bottom: 30px;
+
+
+}
+
+
+.form__check-label {
+  display: inline-block;
+  padding-left: 10px;
+
+}
+
+
+
+// --- contact group
+.form__contact-holder {
+  margin: 0;
+  padding: 40px 0 15px;
+  border: none;
+
+}
+
+
+.form__contact-inner {
+  padding-right: 20px;
+  padding-left: 20px;
+
+}
+
+
+.form__contact-legend {
+  display: none;
+
+}
+
+
+
+// --- app group
+.form__app-holder {
+  margin: 0;
+  padding: 20px 0 15px;
+  background-color: $bg-secondary-shade;
+  border: none;
+
+}
+
+
+.form__app-inner {
+  padding-right: 20px;
+  padding-left: 20px;
+
+}
+
+
+.form__app-message {
+  padding: 15px 30px;
+
+}
+
+
+.form__app-legend {
+  margin-bottom: 10px;
+  line-height: 1.3;
+  text-align: center;
+  color: $accent-color;
+  text-transform: uppercase;
+
+}
+
+
+.form__radio-radioinput {
+  margin-bottom: 30px;
+
+}
+
+
+.form__radio-label {
+  display: inline-block;
+  padding-left: 10px;
+
+}
+
+
+// --- description
+.form__descr-holder {
+  margin: 0;
+  padding: 20px 0 15px;
+  border: none;
+
+}
+
+
+.form__descr-inner {
+  padding-right: 20px;
+  padding-left: 20px;
+
+}
+
+
+.form__descr-message {
+  padding: 15px 30px;
+
+}
+
+
+.form__descr-legend {
+  margin-bottom: 10px;
+  line-height: 1.3;
+  text-align: center;
+  color: $accent-color;
+  text-transform: uppercase;
+
+}
+
+
+
+// --- submit group
+.form__submit-inner {
+  padding-right: 20px;
+  padding-left: 20px;
+
+}
+
+
+.form__btn-holder {
+  margin-bottom: 40px;
+
+}
+
+
+.form__reqfields-message {
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+
