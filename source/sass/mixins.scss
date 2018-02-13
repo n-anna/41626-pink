@@ -82,8 +82,8 @@
 
   //btn hover styles
   &:hover {
-     color: rgba($primary-color, 0.3);
-     border: 3px solid rgba($brdr-secondary, 0.3);
+    color: rgba($primary-color, 0.3);
+    border: 3px solid rgba($brdr-secondary, 0.3);
 
   }
 
@@ -212,10 +212,10 @@
 //angled reverse shape bg
 @mixin angled-reverse-bg {
   clip-path: polygon(
-   0 10vw,
-   100% 0,
-   100% 100%,
-   0 100%
+    0 10vw,
+    100% 0,
+    100% 100%,
+    0 100%
   );
 
 }
