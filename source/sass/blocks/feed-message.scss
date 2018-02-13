@@ -1,5 +1,5 @@
 .feed-message {
-  padding: 55px 15px 45px;
+  padding: 45px 15px 35px;
 
 }
 
@@ -13,7 +13,8 @@
 
 .feed-message__exclam {
   margin-top: 0;
-  margin-bottom: 3px;
+  margin-bottom: 0;
+  line-height: 2.2;
   text-align: center;
 
 }
@@ -21,7 +22,8 @@
 
 .feed-message__quest {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  line-height: 2.2;
   text-align: center;
 
 }
