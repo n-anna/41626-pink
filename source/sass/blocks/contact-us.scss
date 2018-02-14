@@ -1,0 +1,73 @@
+.contact-us {
+  padding-top: 40px;
+  padding-bottom: 45px;
+  background-color: $bg-secondary;
+
+}
+
+
+.contact-us--section-edge {
+  @include arrow-bg;
+
+}
+
+
+.contact-us__inner {
+  padding-right: 20px;
+  padding-left: 20px;
+
+}
+
+.contact-us__heading-quest {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+
+}
+
+
+.contact-us__heading-exclam {
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+
+}
+
+.contact-us__info-holder {
+  text-align: center;
+
+}
+
+
+.contact-us__heading {
+  margin-top: 0px;
+  margin-bottom: 0;
+
+}
+
+
+.contact-us__info {
+  display: inline-block;
+  margin-bottom: 15px;
+
+}
+
+
+.contact-us__info-phone {
+  color: $accent-color;
+
+}
+
+
+.contact-us__info-email{
+  color: $accent-color;
+
+}
+
+
+.contact-us__info-address {
+  display: inline-block;
+  margin-bottom: 25px;
+  color: $accent-color;
+
+}

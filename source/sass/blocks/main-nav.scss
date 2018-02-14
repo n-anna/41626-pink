@@ -1,0 +1,57 @@
+.main-nav {
+  position: relative;
+  top: 20px;
+
+}
+
+
+.main-nav__trigger {
+  position: absolute;
+  top: -65px;
+  right: -20px;
+  padding: 15px;
+  box-sizing: content-box;
+
+}
+
+
+.main-nav__dropdown{
+  position: absolute;
+  left: -20px;
+  right: -20px;
+  top: 1px;
+  z-index: -1;
+  background-color: $bg-primary;
+
+}
+
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+
+}
+
+
+.main-nav__item {
+  border-bottom: 1px solid #000000;
+
+}
+
+
+.main-nav__item:not(:last-child) {
+  box-shadow: 0 1px 0 1px rgba(255, 255, 255, 0.1);
+
+}
+
+
+.main-nav__link {
+  display: inline-block;
+  padding: 24px 35px 22px;
+  line-height: 1;
+  color: $secondary-color;
+  text-transform: uppercase;
+
+}

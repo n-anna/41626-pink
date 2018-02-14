@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="ru">
+<!-- Переключение меню и внешнего вида кнопки по классу show-main-nav тег html -->
+<html lang="ru" class="opensans">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Фотографии пользователей</title>
     <meta name="description" content="Приложение для всех. Поднимает настроение. Меняет мир вокруг.">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <!-- Add to header bg-color + bg-img -->
     <header class="page-header">
       <!-- Accessibility: hidden heading -->
       <h1 class="sr-only visually-hidden">Поднимите себе настроение с приложением PINK</h1>
-      <div class="page-header__inner inner">
-        <!-- Accessibility: jump/skip to main contentent link -->
-        <div class="skip-to-main">
-          <a class="skip-to-main__link sr-shortcut" href="#skip-to-main">Skip to main content</a>
-        </div>
-        <div class="page-header__top">
+      <!-- Accessibility: jump/skip to main contentent link -->
+      <div class="skip-to-main">
+        <a class="skip-to-main__link sr-shortcut" href="#skip-to-main">Skip to main content</a>
+      </div>
+      <div class="page-header__top">
+        <div class="page-header__top-inner">
           <div class="logo page-header__logo">
             <a class="logo__link" href="index.html">
               <!-- svg logo -->
@@ -28,7 +30,7 @@
             <!-- Accessibility: used aria-expanded and aria-haspopup-->
             <button class="btn-menu main-nav__trigger" type="button" aria-expanded="false" aria-haspopup="true" aria-label="global-menu-button">
               <!-- Accessibility: provided alternative text -->
-              <span class="sr-only visually-hidden hidden-text">Hamburger menu button</span>
+              <span class="sr-only visually-hidden">Hamburger menu button</span>
               <span class="btn-menu__items"></span>
             </button>
             <!-- Accessibility: used aria-expanded-->
@@ -36,27 +38,29 @@
               <div class="main-nav__dropdown-inner">
                 <ul class="main-nav__list">
                   <li class="main-nav__item">
-                    <a class="main-nav__link subhead-mid" href="index.html">Главная</a>
+                    <a class="main-nav__link subheading" href="index.html">Главная</a>
                   </li>
                   <!-- Accessibility: used aria-current-->
-                  <li class="main-nav__item">
-                    <a class="main-nav__link subhead-mid" href="#" aria-current="page">Фотографии</a>
+                  <li class="main-nav__item main-nav__item--active">
+                    <a class="main-nav__link subheading" href="#" aria-current="page">Фотографии</a>
                   </li>
                   <li class="main-nav__item">
-                    <a class="main-nav__link subhead-mid" href="form.html">Конкурс</a>
+                    <a class="main-nav__link subheading" href="form.html">Конкурс</a>
                   </li>
                   <li class="main-nav__item">
-                    <a class="main-nav__link subhead-mid" href="https://htmlacademy.ru/intensive/adaptive" rel="noopener" rel="nofollow">HTML Academy</a>
+                    <a class="main-nav__link subheading" href="https://htmlacademy.ru/intensive/adaptive" rel="noopener" rel="nofollow">HTML Academy</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
         </div>
-        <div class="intro-share page-header__btm">
+      </div>
+      <div class="intro-share page-header__btm">
+        <div class="intro-share__inner">
           <!-- Accessibility: heading is invisible to sr, because section photofeed has an accessible alternative -->
           <div class="intro-share__message page-header__btm-message">
-            <h2 class="intro-share__heading subhead-top" aria-hidden="true">Фотографии пользователей</h2>
+            <h2 class="intro-share__heading heading" aria-hidden="true">Фотографии пользователей</h2>
           </div>
         </div>
       </div>
@@ -68,7 +72,7 @@
         <!-- Accessibility: hidden heading -->
         <h2 class="sr-only visually-hidden">Лента фотографий пользователей приложения PINK</h2>
         <div class="feed-message photofeed__message">
-          <div class="feed-message__inner inner">
+          <div class="feed-message__inner">
             <p class="feed-message__exclam body-text">Взгляните на фотографии, которые выкладывают пользователи!</p>
             <p class="feed-message__quest body-text">Видите, как не хватает ваших?</p>
           </div>
@@ -79,33 +83,35 @@
           <!-- Img or bg image covering full width? -->
           <div class="photo-day__img-holder">
             <a class="photo-day__imgfool-link" href="#">
-              <img class="photo-day__img-prev" src="http://placehold.it/320x137" alt="Photo Day">
+              <img class="photo-day__img-prev" src="img/panorama-mobile@1x.jpg" alt="Photo Day">
               <span class="photo-day__label">Панорама дня</span>
             </a>
           </div>
-          <div class="photo-day__inner inner user-info">
-            <header class="photo-day__header user-info__heading">
-              <h4 class="photo-day__user-name user-info__heading-name" aria-label="photoday-user">Анна</h4>
-              <time class="photo-day__share-date user-info__heading-date" datetime="">(5 минут назад)</time>
-            </header>
-            <div class="photo-day__post-desc user-info__postdesc">
-              <p class="photo-day__post-text user-info__postdesc-text body-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <div class="photo-day__inner">
+            <div class="user-info">
+              <header class="photo-day__header user-info__heading">
+                <h4 class="photo-day__user-name user-info__heading-name" aria-label="photoday-user">Анна</h4>
+                <time class="photo-day__share-date user-info__heading-date" datetime="">(5 минут назад)</time>
+              </header>
+              <div class="photo-day__post-desc user-info__postdesc">
+                <p class="photo-day__post-text user-info__postdesc-text body-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              </div>
+              <footer class="photo-day__footer user-info__like">
+                <a class="photo-day__like-link user-info__like-link" href="#" onclick="" tittle="Like">
+                  <!-- Accessibility: provided alternative text -->
+                  <span class="sr-only visually-hidden">Нажать на интерактивный элемент Like</span>
+                  <svg class="photo-day__like-icon user-info__like-icon" aria-hidden="true">
+                    <use xlink:href="#">
+                  </svg>
+                  <span class="photo-day__like-label user-info__like-label">Нравится:</span>
+                  <span class="photo-day__like-count user-info__like-count">215</span>
+                </a>
+              </footer>
             </div>
-            <footer class="photo-day__footer user-info__like">
-              <a class="photo-day__like-link user-info__like-link" href="#" onclick="" tittle="Like">
-                <!-- Accessibility: provided alternative text -->
-                <span class="sr-only visually-hidden">Нажать на интерактивный элемент Like</span>
-                <svg class="photo-day__like-icon user-info__like-icon" aria-hidden="true">
-                  <use xlink:href="#">
-                </svg>
-                <span class="photo-day__like-label user-info__like-label">Нравится:</span>
-                <span class="photo-day__like-count user-info__like-count">215</span>
-              </a>
-            </footer>
           </div>
         </artice>
         <div class="photoshare photofeed__stream">
-          <div class="photoshare__inner inner">
+          <div class="photoshare__inner">
             <!-- Accessibility: hidden heading -->
             <h3 class="sr-only visually-hidden">Фотографии пользователей</h3>
             <ul class="photoshare__list">
@@ -113,7 +119,7 @@
                 <div class="photoshare__user-post">
                   <div class="photoshare__user-img">
                     <a class="photoshare__imgfull-link" href="#">
-                      <img class="photoshare__img-prev" src="http://placehold.it/280x180" alt="Car photo">
+                      <img class="photoshare__img-prev" src="img/photo-car-mobile@1x.jpg" alt="Car photo">
                     </a>
                   </div>
                   <div class="photoshare__user-info user-info">
@@ -142,7 +148,7 @@
                 <div class="photoshare__user-post">
                   <div class="photoshare__user-img">
                     <a class="photoshare__imgfull-link" href="#">
-                      <img class="photoshare__img-prev" src="http://placehold.it/280x180" alt="Drum image">
+                      <img class="photoshare__img-prev" src="img/photo-drumset-mobile@1x.jpg" alt="Drum image">
                     </a>
                   </div>
                   <div class="photoshare__user-info user-info">
@@ -171,7 +177,7 @@
                 <div class="photoshare__user-post">
                   <div class="photoshare__user-img">
                     <a class="photoshare__imgfull-link" href="#">
-                      <img class="photoshare__img-prev" src="http://placehold.it/280x180" alt="Sky ceiling">
+                      <img class="photoshare__img-prev" src="img/photo-window-mobile@1x.jpg" alt="Sky ceiling">
                     </a>
                   </div>
                   <div class="photoshare__user-info user-info">
@@ -200,7 +206,7 @@
                 <div class="photoshare__user-post">
                   <div class="photoshare__user-img">
                     <a class="photoshare__imgfull-link" href="#">
-                      <img class="photoshare__img-prev" src="http://placehold.it/280x180" alt="Organic food fest">
+                      <img class="photoshare__img-prev" src="img/photo-fair-mobile@1x.jpg" alt="Organic food fest">
                     </a>
                   </div>
                   <div class="photoshare__user-info user-info">
@@ -229,7 +235,7 @@
                 <div class="photoshare__user-post">
                   <div class="photoshare__user-img">
                     <a class="photoshare__imgfull-link" href="#">
-                      <img class="photoshare__img-prev" src="http://placehold.it/280x180" alt="Mountain climber">
+                      <img class="photoshare__img-prev" src="img/photo-pov-mobile@1x.jpg" alt="Mountain climber">
                     </a>
                   </div>
                   <div class="photoshare__user-info user-info">
@@ -258,7 +264,7 @@
                 <div class="photoshare__user-post">
                   <div class="photoshare__user-img">
                     <a class="photoshare__imgfull-link" href="#">
-                      <img class="photoshare__img-prev" src="http://placehold.it/280x180" alt="Morning sky from airplane">
+                      <img class="photoshare__img-prev" src="img/photo-wing-mobile@1x.jpg" alt="Morning sky from airplane">
                     </a>
                   </div>
                   <div class="photoshare__user-info user-info">
@@ -289,14 +295,16 @@
       </section>
       <!-- Section 3 Upload Photo-->
       <section class="upload-ph">
-        <div class="upload-ph__inner inner">
-          <!-- Accessibility: hidden heading -->
-          <h2 class="sr-only visually-hidden">Отредакторовать и разместить фотографию</h2>
-          <div class="upload-ph__message">
+        <!-- Accessibility: hidden heading -->
+        <h2 class="sr-only visually-hidden">Отредакторовать и разместить фотографию</h2>
+        <div class="upload-ph__message">
+          <div class="upload-ph__message-inner">
             <p class="upload-ph__message-exclam body-text">Затмите их!</p>
             <p class="upload-ph__message-text body-text">Выкладывайте все, что накопилось в телефоне!</p>
           </div>
-          <div class="photo-editor upload-ph__edit-holder">
+        </div>
+        <div class="photo-editor upload-ph__edit-holder">
+          <div class="photo-editor__inner">
             <!-- Placeholder img as a bg -->
             <div class="photo-editor__container">
               <canvas class="photo-editor__canvas" width="280" height="374" aria-label="photo-edit-canvas"></canvas>
@@ -340,10 +348,10 @@
             </div>
             <div class="photo-editor__btns">
               <div class="photo-editor__btn-submit">
-                <button class="btn btn--submit-share subhead-mid" type="submit">Запостить</button>
+                <button class="btn btn--submit-share subheading" type="submit">Запостить</button>
               </div>
               <div class="photo-editor__btn-abort">
-                <button class="btn btn--abort-share subhead-mid" type="reset">Отмена</button>
+                <button class="btn btn--abort-share subheading" type="reset">Отмена</button>
               </div>
             </div>
           </div>
@@ -351,7 +359,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__inner inner">
+      <div class="page-footer__inner">
         <!-- footer svg logo -->
         <div class="logo-footer page-footer__logo">
           <img class="logo-footer__img" src="http://placehold.it/147x40" width="147" height="40" alt="Pink footer logo">

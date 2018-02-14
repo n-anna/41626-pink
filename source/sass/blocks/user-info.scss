@@ -1,0 +1,47 @@
+.user-info {
+  margin-bottom: 20px;
+  padding: 20px 15px;
+  background-color: $bg-secondary-shade;
+
+}
+
+.user-info__heading-name {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 2px;
+
+}
+
+
+.user-info__heading-date {
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+
+}
+
+
+.user-info__postdesc-text {
+  margin-top: 0;
+
+}
+
+
+.user-info__like-link {
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $accent-color;
+
+}
+
+
+.user-info__like-label {
+  display: inline-block;
+
+}
+
+.user-info__like-count {
+  display: inline-block;
+
+}

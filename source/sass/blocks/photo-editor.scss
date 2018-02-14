@@ -1,0 +1,69 @@
+.photo-editor {
+  background-color: $bg-secondary-shade;
+
+}
+
+
+.photo-editor__inner {
+  padding-right: 20px;
+  padding-left: 20px;
+
+}
+
+
+.photo-editor__container {
+  background: url(../../img/photo-road-mobile@1x.jpg) no-repeat top;
+
+}
+
+
+.photo-editor__canvas {
+  display: block;
+
+}
+
+
+.photo-editor__controls {
+  position: relative;
+  padding: 40px 15px 15px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    right: -20px;
+    bottom: -5px;
+    display: block;
+    width: 100vw;
+    height:1px;
+    background-color: #dddfe0;
+
+  }
+
+}
+
+
+.photo-editor__controls-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+
+.photo-editor__control-item {
+  display: inline-block;
+
+
+}
+
+
+.photo-editor__btns {
+  padding: 30px 0 40px;
+
+}
+
+.photo-editor__btn-submit {
+  margin-bottom: 12px;
+
+}

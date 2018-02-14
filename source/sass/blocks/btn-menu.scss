@@ -1,0 +1,40 @@
+.btn-menu {
+  width: 30px;
+  height: 30px;
+  border: 0;
+  background-color: rgba($bg-primary-dark, 0);
+
+}
+
+
+.btn-menu__items {
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 13px;
+    top: 28px;
+    display: block;
+    width: 34px;
+    height: 4px;
+    background-color: $bg-secondary;
+    border-radius: 2px;
+    transform: rotate(45deg);
+
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 13px;
+    top: 28px;
+    display: block;
+    width: 34px;
+    height: 4px;
+    background-color: $bg-secondary;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+
+  }
+
+}

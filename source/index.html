@@ -1,12 +1,267 @@
 <!DOCTYPE html>
-<html lang="ru">
+<!-- Переключение меню и внешнего вида кнопки по классу show-main-nav тег html -->
+<html lang="ru" class="opensans">
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пинк — приложение от HTML Academy</title>
+    <meta name="description" content="Приложение для всех. Поднимает настроение. Меняет мир вокруг.">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <!-- Add to header bg-color + bg-img -->
+    <header class="page-header">
+      <!-- Accessibility hidden heading -->
+      <h1 class="sr-only visually-hidden">PINK — приложение от HTML Academy</h1>
+      <div class="page-header__top">
+        <div class="page-header__top-inner">
+          <div class="logo page-header__logo">
+            <a class="logo__link" href="#">
+              <!-- svg logo -->
+              <img class="logo__img" src="http://placehold.it/75x22" width="75" height="22" alt="PINK logo">
+            </a>
+          </div>
+          <!-- Accessibility: used aria-label-->
+          <nav class="main-nav page-header__nav" aria-label="global-menu">
+            <!-- Accessibility: used aria-expanded and aria-haspopup-->
+            <button class="btn-menu main-nav__trigger" type="button" aria-expanded="false" aria-haspopup="true" aria-label="global-menu-button">
+              <!-- Accessibility: provided alternative text -->
+              <span class="sr-only visually-hidden">Hamburger menu button</span>
+              <!-- Add pseudo elements -->
+              <span class="btn-menu__items"></span>
+            </button>
+            <!-- Accessibility: used aria-expanded-->
+            <div class="main-nav__dropdown" aria-expanded="false">
+              <div class="main-nav__dropdown-inner">
+                <ul class="main-nav__list">
+                  <!-- Accessibility: used aria-current-->
+                  <li class="main-nav__item main-nav__item--active">
+                    <a class="main-nav__link subheading" href="#" aria-current="page">Главная</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link subheading" href="photo.html">Фотографии</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link subheading" href="form.html">Конкурс</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link subheading" href="https://htmlacademy.ru/intensive/adaptive" rel="noopener" rel="nofollow">HTML Academy</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="hero page-header__btm">
+        <div class="hero__img-holder page-header__btm-img">
+          <img class="hero__img-action" src="img/iphone-hand-mobile@1x.png" alt="iPhone in hand, app showcase">
+        </div>
+        <div class="hero__action page-header__btm-action">
+          <div class="hero__action-inner">
+            <div class="btn btn--download hero__action-btn" aria-label="download-app-button">
+              <a class="btn__link subheading" href="https://www.apple.com/lae/itunes/working-itunes/market/" rel="noopener" rel="nofollow">Скачать приложение</a>
+            </div>
+            <div class="apps hero__action-app">
+              <!-- svg app icons -->
+              <ul class="apps__list">
+                <li class="apps__item">
+                  <a class="apps__item-link" href="https://www.apple.com/lae/itunes/working-itunes/market/" rel="noopener" rel="nofollow">
+                    <img class="apps__item-img" src="http://placehold.it/47x56" width="47" height="56" alt="Apple icon" title="Apple icon">
+                  </a>
+                </li>
+                <li class="apps__item">
+                  <a class="apps__item-link" href="https://play.google.com/store/apps/" rel="noopener" rel="nofollow">
+                    <img class="apps__item-img" src="http://placehold.it/43x47" width="43" height="47" alt="Android icon" title="Android icon">
+                  </a>
+                </li>
+                <li class="apps__item">
+                  <a class="apps__item-link" href="https://www.microsoft.com/ru-RU/store/apps/windows-phone" rel="noopener" rel="nofollow">
+                    <img class="apps__item-img" src="http://placehold.it/44x41" width="44" height="41" alt="Windows icon" title="Windows icon">
+                  </a>
+                </li>
+              </ul>
+              <div class="apps__desc">
+                <p class="apps-desc__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="homepage-main">
+      <!-- Section 1 -->
+      <section class="features">
+        <div class="appfeat-heading features__heading features__heading--section-edge">
+          <div class="appfeat-heading__inner">
+            <div class="appfeat-heading__holder">
+              <h2 class="appfeat-heading__quest heading">Устали от серости мегаполиса?</h2>
+              <h2 class="appfeat-heading__exclam heading">Нам есть, что вам предложить!</h2>
+            </div>
+          </div>
+        </div>
+        <div class="appfeat-desc features__desc">
+          <div class="appfeat-desc__inner">
+            <ul class="appfeat-desc__list">
+              <li class="appfeat-desc__item">
+                <h3 class="appfeat-desc__heading subheading">Поднимает настроение</h3>
+                <p class="appfeat-desc__text body-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="appfeat-desc__item">
+                <h3 class="appfeat-desc__heading subheading">Меняет мир вокруг</h3>
+                <p class="appfeat-desc__text body-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="appfeat-desc__item">
+                <h3 class="appfeat-desc__heading subheading">Заводит новых друзей</h3>
+                <p class="appfeat-desc__text body-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="appfeat-img features__img">
+          <img class="appfeat-img__action" src="img/iphone-screen-mobile@1x.png" alt="iPhone screen, app showcase" >
+        </div>
+      </section>
+      <!-- Section 2 App-Review -->
+      <section class="app-review">
+        <div class="app-review__inner">
+          <!-- Accessibility: hidden heading -->
+          <h2 class="sr-only visually-hidden">Отзывы пользователей приложения</h2>
+          <div class="review app-review__users">
+            <ul class="review__list">
+              <li class="review__item">
+                <h3 class="review__item-heading subheading">Николай Петров</h3>
+                <p class="review__item-text body-text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+              </li>
+              <li class="review__item">
+                <h3 class="review__item-heading subheading">Николай Петров</h3>
+                <p class="review__item-text body-text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+              </li>
+              <li class="review__item">
+                <h3 class="review__item-heading subheading">Николай Петров</h3>
+                <p class="review__item-text body-text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+              </li>
+            </ul>
+          </div>
+          <!-- Slider -->
+          <div class="slider-rev app-review__sl" aria-label="review-slider">
+            <ul class="slider-rev__list">
+              <li class="slider-rev__item active">
+                <a class="slider-rev__link slider-rev__link--active" href="#""></a>
+              </li>
+              <li class="slider-rev__item">
+                <a class="slider-rev__link slider-rev__link--active" href="#""></a>
+              </li>
+              <li class="slider-rev__item">
+                <a class="slider-rev__link slider-rev__link--active" href="#""></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Section 3 Plans-->
+      <section class="plans plans--section-edge">
+        <div class="plans__inner">
+          <!-- Accessibility: hidden heading -->
+          <h2 class="sr-only visually-hidden">Планы и цены приложения</h2>
+          <div class="plans__holder">
+            <table class="tbl plans__tbl-content">
+              <thead class="tbl__header">
+                <tr class="tbl__header-row subheading">
+                  <th class="tbl__header-item" scope="col">
+                    База
+                  </th>
+                  <th class="tbl__header-item" scope="col">
+                    Стандарт
+                  </th>
+                  <th class="tbl__header-item" scope="col">
+                    Анлим
+                  </th>
+                </tr>
+                <tr class="tbl__header-row heading">
+                  <th class="tbl__header-item" scope="col">
+                    1,99 usd
+                  </th>
+                  <th class="tbl__header-item" scope="col">
+                    3,99 usd
+                  </th>
+                  <th class="tbl__header-item" scope="col">
+                    9,99 usd
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="tbl__body">
+                <tr class="tbl__row body-text">
+                  <!-- add svg icons to ::after pseudo-element? -->
+                  <td class="tbl__row-item" aria-label="included">Розовый фильтр</td>
+                  <td class="tbl__row-item" aria-label="not-included">Смайлики</td>
+                  <td class="tbl__row-item" aria-label="not-included">Комментарии</td>
+                </tr>
+                <tr class="tbl__row  body-text">
+                  <!-- add svg icons to ::after pseudo-element?-->
+                  <td class="tbl__row-item" aria-label="included">Розовый фильтр</td>
+                  <td class="tbl__row-item" aria-label="included">Смайлики</td>
+                  <td class="tbl__row-item" aria-label="not-included">Комментарии</td>
+                </tr>
+                <tr class="tbl__row  body-text">
+                  <!-- add svg icons to ::after pseudo-element? -->
+                  <td class="tbl__row-item" aria-label="included">Розовый фильтр</td>
+                  <td class="tbl__row-item" aria-label="included">Смайлики</td>
+                  <td class="tbl__row-item" aria-label="included">Комментарии</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- Slider -->
+          <div class="slider-pl plans__sl" aria-label="plans-slider">
+            <!-- slider bullets and active bullets -->
+            <ul class="slider-pl__list">
+              <li class="slider-pl__item  active">
+                <a class="slider-pl__link slider-pl__link--active" href="#""></a>
+              </li>
+              <li class="slider-pl__item">
+                <a class="slider-pl__link slider-pl__link--active" href="#""></a>
+              </li>
+              <li class="slider-pl__item">
+                <a class="slider-pl__link slider-pl__link--active" href="#""></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="homepage-footer">
+      <div class="contact-us contact-us--section-edge homepage-footer__contact-us">
+        <div class="contact-us__inner">
+          <div class="contact-us__heading-holder">
+            <h2 class="contact-us__heading-quest heading">Остались вопросы?</h2>
+            <h2 class="contact-us__heading-exclam heading">Свяжитесь с нами!</h2>
+          </div>
+          <div class="contact-us__info-holder">
+            <div class="contact-us__phone">
+              <h3 class="contact-us__heading subheading">Звоните:</h3>
+              <span class="contact-us__info">
+                <a class="contact-us__info-phone heading" href="tel:+78125556666" title="Звоните">+7(812)555-66-66</a>
+              </span>
+            </div>
+            <div class="contact-us__email">
+              <h3 class="contact-us__heading subheading">Пишите:</h3>
+              <span class="contact-us__info">
+                <a class="contact-us__info-email heading" href="mailto:mail@htmlacademy.ru" >mail@htmlacademy.ru</a>
+              </span>
+            </div>
+            <div class="contact-us__address">
+              <h3 class="contact-us__heading subheading">Приезжайте в гости:</h3>
+              <span class="contact-us__info-address heading">ул. Большая Конюшенная, 19/8</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map-container yandex-map homepage-footer__map-holder" id="map">
+        <img class="yandex-map__img" src="img/bg-map-mobile@1x.png" alt="yandex-map">
+        <!-- yandex map -->
+      </div>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+    </footer>
   </body>
 </html>
